@@ -91,3 +91,48 @@ a { transition: var(--transition); }
     border-color: transparent;
 }
 
+section { padding: 10rem 0; }
+
+section:nth-child(even) { background-color: var(--color-gray-50); }
+
+section > h1, section > p {
+    text-align: center;
+    margin-top: 0.5rem;
+    width: 30rem;
+    margin-inline: auto;
+}
+
+/* ========== NAVBAR ========== */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 3rem;
+
+    display: grid;           
+    place-items: center;  /* Alinea el contenido verticalmente al centro */
+
+    z-index: 9;
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__container a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.nav__theme-btn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
